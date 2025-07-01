@@ -1,0 +1,95 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+You are building a single-page, dark-theme website for the Eta Chapter of Zeta Psi Fraternity at Yale University.
+Everything should feel “fratty” — bold, high-energy, and a little playful — while still looking polished. The palette is #f4b428 (the gold from the attached logo) on near-black (#0a0a0a) backgrounds. Accent grays (#1a1a1a, #2a2a2a) may be used sparingly for depth.
+
+Global requirements
+Framework / stack
+
+
+Use GSAP 3 for all motion.
+
+Load Google Font: Cinzel (headings) & Inter (body).
+
+Layout & navigation
+
+Sticky top nav bar with logo at left (SVG supplied below) and links to sections:
+Home · · Brothers ·  · Contact
+
+and at the bottom once you scroll all the way down you will have:
+ History · Summer Housing Alumni · Exec Team
+
+Smooth-scroll to anchors; highlight active link on scroll.
+
+GSAP flourishes
+
+Logo pulses on page load (scale 0.8→1 with elastic ease). and the gsap spinning animation.
+
+Section headers slide in from left, 60 px offset, 0.6 s dur.
+
+Image gallery cards tilt on hover (transform: rotateX(4deg) rotateY(-4deg)), returning on mouseleave.
+
+Accessibility & performance
+
+
+All images lazy-loaded; alt text provided.
+
+
+
+Section specs
+1 · Hero (Home)
+Full-viewport background video loop of Yale campus at dusk with a black overlay (opacity: .4).
+
+Centered stack: chapter crest (SVG above), “Eta Chapter · Yale University” in 58 px Cinzel, call-to-action button “Rush ZΨ” (scrolls to Contact).
+
+2 · History
+Two-column: left 60 % text, right 40 % parallax image of the old Yale chapter house.
+
+Text (scroll-fade-in paragraph by paragraph):
+
+sql
+Copy
+Edit
+1864 – 1914: Breaking New Ground  
+Zeta Psi was the first fraternity to establish a chapter west of the Mississippi...  
+...Eta at Yale (1889) briefly made ZΨ the only fraternity with chapters at all eight Ivy League schools.
+3 · Summer Housing
+MIT Sigma Nu sample data re-skinned for Zeta Psi (keep the same pricing, timeline, FAQs, etc.).
+
+Layout:
+
+Left: tabbed gallery of the 0-8 images (GSAP slideRight/Left between tabs).
+
+Right: card stack with Location → Amenities → Pricing → Timeline → House Rules → Parking → FAQs.
+Each card expands/accordions on click (GSAP height animation).
+
+4 · Brothers
+Responsive masonry grid of circular headshots (160 px) with name + class year underneath.
+
+On hover: headshot flips 180° Y to show a quick fun fact.
+
+5 · Alumni
+Horizontally scrolling marquee of notable alumni logos (set to grayscale; color on hover).
+
+6 · Executive Team
+3-wide cards (President, VP, Treasurer, Risk, Rush, Philanthropy).
+Each card lifts on hover (box-shadow & GSAP y-10).
+
+7 · Contact
+Split screen: Yale campus map embed (left) / contact form (right).
+Form fields: Name, Email, Affiliation (Prospective rushee ☐ | Summer tenant ☐ | Other ☐), Message.
+Validate with JS; show GSAP “sent” checkmark animation.
+
+8 · Footer
+Thin gold top border, black background.
+
+Columns: Quick Links | Address | Social Icons (IG, FB, X).
+
+Tiny line: “© 2025 Zeta Psi Eta · Designed by the Brothers.”
+
+
+
