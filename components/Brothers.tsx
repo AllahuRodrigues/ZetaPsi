@@ -10,27 +10,41 @@ interface Brother {
   classYear: string
   role?: string
   image: string
-  funFact: string
 }
 
+const placeholder = '/images/logo.png'
+
 const brothers: Brother[] = [
-  { id: '1', name: 'Melik Williams', classYear: '\'25', role: 'President', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face', funFact: 'Led the chapter to record-breaking philanthropy goals' },
-  { id: '2', name: 'Yassin Mabizari', classYear: '\'25', role: 'Vice President', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face', funFact: 'Speaks four languages fluently' },
-  { id: '3', name: 'Cooper Austin', classYear: '\'26', role: 'Treasurer', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face', funFact: 'Economics major with a passion for sustainable investing' },
-  { id: '4', name: 'Allah-u-Abha Rodrigues', classYear: '\'26', role: 'Secretary', image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop&crop=face', funFact: 'Computer Science major building the next big app' },
-  { id: '5', name: 'Donovan McKoy', classYear: '\'25', role: 'Social Chair', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=face', funFact: 'Organized the legendary Zeta Jungle Jam' },
-  { id: '6', name: 'Nolan Recker', classYear: '\'25', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face', funFact: 'Pre-med student and varsity athlete' },
-  { id: '7', name: 'Scott Truninger', classYear: '\'24', image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=300&fit=crop&crop=face', funFact: 'Philosophy major writing his senior thesis on ethics' },
-  { id: '8', name: 'Derek Denehy', classYear: '\'26', image: 'https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?w=300&h=300&fit=crop&crop=face', funFact: 'Engineering student and robotics team captain' },
-  { id: '9', name: 'Zach Scullin', classYear: '\'25', image: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?w=300&h=300&fit=crop&crop=face', funFact: 'History major and debate team champion' },
-  { id: '10', name: 'Nick Conforti', classYear: '\'24', image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=300&h=300&fit=crop&crop=face', funFact: 'Environmental Studies major passionate about climate action' },
-  { id: '11', name: 'Aiden Stephens', classYear: '\'26', image: 'https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?w=300&h=300&fit=crop&crop=face', funFact: 'Music major and jazz pianist' },
-  { id: '12', name: 'Cam Price', classYear: '\'25', image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=300&fit=crop&crop=face', funFact: 'Psychology major researching cognitive behavior' },
+  { id: '1', name: 'Melik Williams', classYear: '\'25', role: 'President', image: '/images/melik.png' },
+  { id: '2', name: 'Yassin Mabizari', classYear: '\'25', role: 'Vice President', image: '/images/yassin.png' },
+  { id: '3', name: 'Cooper Austin', classYear: '\'26', role: 'Treasurer', image: '/images/cooper.png' },
+  { id: '4', name: 'Allah-u-Abha Rodrigues', classYear: '\'26', role: 'Secretary', image: '/images/rodrigues.png' },
+  { id: '5', name: 'Donovan McKoy', classYear: '\'25', role: 'Social Chair', image: '/images/donavan.png' },
+  { id: '6', name: 'Nolan Recker', classYear: '\'25', image: '/images/nolan.png' },
+  { id: '7', name: 'Scott Truninger', classYear: '\'24', image: '/images/scott-trun.png' },
+  { id: '8', name: 'Derek Denehy', classYear: '\'26', image: '/images/derek.png' },
+  { id: '9', name: 'Zach Scullin', classYear: '\'25', image: '/images/zach-scullin.png' },
+  { id: '10', name: 'Nick Conforti', classYear: '\'24', image: '/images/nick-conforti.png' },
+  { id: '11', name: 'Aiden Stephens', classYear: '\'26', image: '/images/aidan.png' },
+  { id: '12', name: 'Cam Price', classYear: '\'25', image: '/images/cam-price.png' },
+  { id: '13', name: 'Brogan McCaughey', classYear: '\'25', image: '/images/brogan.png' },
+  { id: '14', name: 'Nico Brown', classYear: '\'26', image: '/images/nico-brown.png' },
+  { id: '15', name: 'Wale Fadeyibi', classYear: '\'25', image: '/images/wale.png' },
+  { id: '16', name: 'Avery Misner', classYear: '\'26', image: '/images/avery.png' },
+  { id: '17', name: 'John Kemp', classYear: '\'24', image: '/images/john-kemp.png' },
+  { id: '18', name: 'Brice June', classYear: '\'25', image: '/images/brice.png' },
+  { id: '19', name: 'Matthew Jordan', classYear: '\'26', image: '/images/matthew-jordan.png' },
+  { id: '20', name: 'Samir Batheja', classYear: '\'25', image: '/images/samir.png' },
+  { id: '21', name: 'Walter Royal', classYear: '\'24', image: '/images/walter.png' },
+  { id: '22', name: 'Orion Browne', classYear: '\'25', image: '/images/orion-browne.png' },
+  { id: '23', name: 'Zavier Averra', classYear: '\'26', image: '/images/zavier.png' },
+  { id: '24', name: 'Trent Page', classYear: '\'25', image: '/images/trent.png' },
+  { id: '25', name: 'Jackson St. Aubyn', classYear: '\'24', image: '/images/jackson.png' },
+  { id: '26', name: 'Samuel McGivern', classYear: '\'26', image: '/images/sam-mcgivern.png' },
+  { id: '27', name: 'Quinton Lewis', classYear: '\'25', image: '/images/quinton.png' },
 ]
 
 export default function Brothers() {
-  const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set())
-
   useEffect(() => {
     // Stagger animation for brother cards
     gsap.fromTo('.brother-card',
@@ -48,42 +62,25 @@ export default function Brothers() {
         }
       }
     )
-  }, [])
 
-  const handleCardHover = (brotherId: string, isHovered: boolean) => {
-    if (isHovered) {
-      setFlippedCards(prev => new Set([...prev, brotherId]))
-      // GSAP flip animation
-      gsap.to(`#brother-${brotherId} .brother-image`, {
-        rotationY: 180,
-        duration: 0.6,
-        ease: 'power2.out'
-      })
-      gsap.to(`#brother-${brotherId} .brother-fact`, {
-        rotationY: 0,
-        duration: 0.6,
+    // Tilt animation on hover
+    const cards = gsap.utils.toArray('.brother-card')
+
+    cards.forEach((card: any) => {
+      const tl = gsap.timeline({ paused: true })
+
+      tl.to(card, {
+        rotateX: 4,
+        rotateY: -4,
+        duration: 0.3,
         ease: 'power2.out',
-        delay: 0.3
+        transformPerspective: 800,
       })
-    } else {
-      setFlippedCards(prev => {
-        const newSet = new Set(prev)
-        newSet.delete(brotherId)
-        return newSet
-      })
-      // GSAP flip back animation
-      gsap.to(`#brother-${brotherId} .brother-image`, {
-        rotationY: 0,
-        duration: 0.6,
-        ease: 'power2.out'
-      })
-      gsap.to(`#brother-${brotherId} .brother-fact`, {
-        rotationY: -180,
-        duration: 0.6,
-        ease: 'power2.out'
-      })
-    }
-  }
+
+      card.addEventListener('mouseenter', () => tl.play())
+      card.addEventListener('mouseleave', () => tl.reverse())
+    })
+  }, [])
 
   return (
     <section id="brothers" className="py-20 bg-zeta-gray-1">
@@ -110,10 +107,10 @@ export default function Brothers() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-6 left-6">
               <h3 className="font-cinzel text-2xl font-bold text-white mb-2">
-                Brotherhood Beyond Yale
+                Brotherhood
               </h3>
               <p className="text-white/90">
-                United in excellence, bound by tradition
+                Bound by tradition
               </p>
             </div>
           </div>
@@ -126,26 +123,16 @@ export default function Brothers() {
               key={brother.id}
               id={`brother-${brother.id}`}
               className="brother-card group cursor-pointer"
-              onMouseEnter={() => handleCardHover(brother.id, true)}
-              onMouseLeave={() => handleCardHover(brother.id, false)}
             >
               <div className="relative">
-                {/* Profile Image */}
-                <div className="brother-image relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden shadow-lg transform-gpu preserve-3d">
+                <div className="brother-image relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden shadow-lg">
                   <Image
                     src={brother.image}
                     alt={brother.name}
                     fill
-                    className="object-cover transition-transform duration-500"
+                    className="object-cover"
                     sizes="160px"
                   />
-                </div>
-
-                {/* Fun Fact Overlay */}
-                <div className="brother-fact absolute inset-0 w-40 h-40 mx-auto mb-4 rounded-full bg-zeta-gold/90 flex items-center justify-center p-4 transform-gpu preserve-3d rotateY-180">
-                  <p className="text-zeta-black text-sm font-medium text-center leading-tight">
-                    {brother.funFact}
-                  </p>
                 </div>
               </div>
 

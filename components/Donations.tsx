@@ -48,26 +48,12 @@ export default function Donations() {
             <span className="heading-gradient">Support Our Chapter</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Your generous contributions help us maintain our house, support brothers, and continue our tradition of excellence at Yale.
+            Help us donate to Zeta and support the brotherhood—events, scholarships, house and parties.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Donation Impact Stats */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="text-center p-6 bg-zeta-gray-1 rounded-lg">
-              <div className="text-3xl font-bold text-zeta-gold mb-2">$2.1M</div>
-              <div className="text-gray-300">Raised This Year</div>
-            </div>
-            <div className="text-center p-6 bg-zeta-gray-1 rounded-lg">
-              <div className="text-3xl font-bold text-zeta-gold mb-2">450+</div>
-              <div className="text-gray-300">Active Donors</div>
-            </div>
-            <div className="text-center p-6 bg-zeta-gray-1 rounded-lg">
-              <div className="text-3xl font-bold text-zeta-gold mb-2">25</div>
-              <div className="text-gray-300">Scholarships Awarded</div>
-            </div>
-          </div>
+          {/* Removed donation stats as requested */}
 
           {/* Donation Tiers */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

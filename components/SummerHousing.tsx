@@ -8,10 +8,11 @@ import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown, MapPin, Wifi, Car, Home, Calendar, DollarSign, Shield } from 'lucide-react'
 
 const housingImages = [
-  { id: '1', src: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Living Room' },
-  { id: '2', src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70a5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Kitchen' },
-  { id: '3', src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Bedroom' },
-  { id: '4', src: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Study Area' },
+  { id: '1', src: '/images/housing/common-room.png', alt: 'Common Room' },
+  { id: '2', src: '/images/housing/room1.png', alt: 'Bedroom' },
+  { id: '3', src: '/images/housing/outside-house-picture.png', alt: 'Front Exterior' },
+  { id: '4', src: '/images/housing/outside-house.png', alt: 'Side Exterior' },
+  { id: '5', src: '/images/housing/outside.png', alt: 'Backyard View' },
 ]
 
 const accordionData = [

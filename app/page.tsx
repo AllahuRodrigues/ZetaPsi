@@ -8,12 +8,9 @@ import Hero from '@/components/Hero'
 import History from '@/components/History'
 import SummerHousing from '@/components/SummerHousing'
 import Brothers from '@/components/Brothers'
-import Alumni from '@/components/Alumni'
 import AlumniAdvisors from '@/components/AlumniAdvisors'
-import ExecutiveTeam from '@/components/ExecutiveTeam'
 import Donations from '@/components/Donations'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -81,12 +78,9 @@ export default function Home() {
       <History />
       <SummerHousing />
       <Brothers />
-      <Alumni />
       <AlumniAdvisors />
-      <ExecutiveTeam />
       <Donations />
       <Contact />
-      <Footer />
     </main>
   )
 } 

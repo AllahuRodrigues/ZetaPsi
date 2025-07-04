@@ -1,8 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { gsap } from 'gsap'
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home')
@@ -13,7 +11,7 @@ export default function Navigation() {
       setIsScrolled(window.scrollY > 50)
       
       // Update active section based on scroll position
-      const sections = ['home', 'history', 'summer-housing', 'brothers', 'alumni', 'exec-team', 'donations', 'contact']
+      const sections = ['home', 'history', 'summer-housing', 'brothers', 'donations', 'contact']
       const current = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -50,8 +48,6 @@ export default function Navigation() {
   const bottomNavLinks = [
     { id: 'history', label: 'History' },
     { id: 'summer-housing', label: 'Summer Housing' },
-    { id: 'alumni', label: 'Alumni' },
-    { id: 'exec-team', label: 'Exec Team' },
     { id: 'donations', label: 'Donations' }
   ]
 
@@ -64,22 +60,12 @@ export default function Navigation() {
         <div className="container-max section-padding">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div 
-              className="flex items-center space-x-3 cursor-pointer logo-pulse"
+            <button
+              className="font-cinzel font-bold text-zeta-gold text-2xl logo-pulse"
               onClick={() => scrollToSection('home')}
             >
-              <Image
-                src="/images/logo.png"
-                alt="Zeta Psi Logo"
-                width={40}
-                height={40}
-                className="w-10 h-10"
-                priority
-              />
-              <span className="font-cinzel font-semibold text-zeta-gold text-lg">
-                ΖΨ
-              </span>
-            </div>
+              ΖΨ
+            </button>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">

@@ -41,23 +41,28 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    // Build mailto link
+    const bodyLines = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Affiliation: ${formData.affiliation.join(', ') || 'N/A'}`,
+      '',
+      formData.message
+    ]
 
-    // GSAP checkmark animation
+    const mailto = `mailto:allah-u-abha.rodrigues@yale.edu?subject=Zeta%20Psi%20Inquiry&body=${encodeURIComponent(bodyLines.join('\n'))}`
+
+    window.location.href = mailto
+
+    // Optionally show success quickly
+    setIsSubmitted(true)
     gsap.fromTo('.success-checkmark',
       { scale: 0, rotation: -180 },
       { scale: 1, rotation: 0, duration: 0.6, ease: 'back.out(1.7)' }
     )
 
-    // Reset form after delay
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ name: '', email: '', affiliation: [], message: '' })
-    }, 3000)
+    // Reset form fields
+    setFormData({ name: '', email: '', affiliation: [], message: '' })
   }
 
   return (
@@ -68,7 +73,7 @@ export default function Contact() {
             <span className="heading-gradient">Get In Touch</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Ready to join our brotherhood or have questions? We'd love to hear from you.
+            Ready to join our brotherhood or have questions? We&apos;d love to hear from you.
           </p>
         </div>
 
@@ -213,7 +218,7 @@ export default function Contact() {
                 </div>
                 <h3 className="font-cinzel text-2xl font-bold mb-2">Message Sent!</h3>
                 <p className="text-gray-300">
-                  Thank you for reaching out. We'll get back to you within 24 hours.
+                  Thank you for reaching out. We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             )}

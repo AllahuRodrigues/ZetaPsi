@@ -17,6 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
       </head>
       <body className="font-inter bg-zeta-black text-white antialiased">
         {children}
