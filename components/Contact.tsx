@@ -95,14 +95,14 @@ export default function Contact() {
                 <div className="flex items-center space-x-4">
                   <Mail className="w-5 h-5 text-zeta-gold flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">zetapsi.eta@yale.edu</div>
+                    <div className="font-semibold">yalezetapsi@gmail.com</div>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-4">
                   <Phone className="w-5 h-5 text-zeta-gold flex-shrink-0" />
                   <div>
-                    <div className="font-semibold">(203) 432-0000</div>
+                    <div className="font-semibold">(xxx) xxx-xxxx</div>
                   </div>
                 </div>
               </div>
