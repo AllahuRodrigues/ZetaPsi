@@ -33,7 +33,7 @@ export default function AlumniAdvisors() {
     <section id="alumni-advisors" className="py-20 bg-zeta-gray-1">
       <div className="container-max section-padding">
         <h2 className="section-header font-cinzel text-4xl md:text-5xl font-bold text-center mb-12">
-          <span className="heading-gradient">Alumni Advisors</span>
+          <span className="heading-gradient">Elder Phi</span>
         </h2>
 
         <div className="flex justify-center">

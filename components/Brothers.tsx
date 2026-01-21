@@ -15,11 +15,19 @@ interface Brother {
 const placeholder = '/images/logo.png'
 
 const brothers: Brother[] = [
-  { id: '1', name: 'Melik Williams', classYear: '\'26', image: '/images/melik.png' },
-  { id: '2', name: 'Yassin Mabizari', classYear: '\'27', role: 'President', image: '/images/yassin.png' },
+  // Officers (in hierarchy order)
+  { id: '1', name: 'Yassin Mabizari', classYear: '\'27', role: 'President', image: '/images/yassin.png' },
+  { id: '2', name: 'Allah-u-Abha Rodrigues', classYear: '\'27', role: 'Vice President', image: '/images/rodrigues.png' },
+  { id: '20', name: 'Samir Batheja', classYear: '\'27', role: 'Secretary', image: '/images/samir.png' },
+  { id: '24', name: 'Trent Page', classYear: '\'28', role: 'Treasurer', image: '/images/trent.png' },
+  { id: '19', name: 'Matthew Jordan', classYear: '\'27', role: 'Sargeant-at-Arms', image: '/images/matthew-jordan.png' },
+  { id: '21', name: 'Walter Royal', classYear: '\'28', role: 'Rush Chair/Social Chair', image: '/images/walter.png' },
+  { id: '22', name: 'Orion Browne', classYear: '\'28', role: 'Social Chair', image: '/images/orion-browne.png' },
+  
+  // Regular Brothers (first half)
   { id: '3', name: 'Cooper Austin', classYear: '\'27', image: '/images/cooper.png' },
-  { id: '4', name: 'Allah-u-Abha Rodrigues', classYear: '\'27', role: 'Vice President', image: '/images/rodrigues.png' },
-  { id: '5', name: 'Donovan McKoy', classYear: '\'27', role: 'Social Chair', image: '/images/donavan.png' },
+  { id: '4', name: 'Melik Williams', classYear: '\'26', image: '/images/melik.png' },
+  { id: '5', name: 'Donovan McKoy', classYear: '\'27', image: '/images/donavan.png' },
   { id: '6', name: 'Nolan Recker', classYear: '\'26', image: '/images/nolan.png' },
   { id: '7', name: 'Scott Truninger', classYear: '\'26', image: '/images/scott-trun.png' },
   { id: '8', name: 'Derek Denehy', classYear: '\'26', image: '/images/derek.png' },
@@ -29,16 +37,13 @@ const brothers: Brother[] = [
   { id: '12', name: 'Cam Price', classYear: '\'26', image: '/images/cam-price.png' },
   { id: '13', name: 'Brogan McCaughey', classYear: '\'26', image: '/images/brogan.png' },
   { id: '14', name: 'Nico Brown', classYear: '\'26', image: '/images/nico-brown.png' },
+  
+  // Regular Brothers (second half)
   { id: '15', name: 'Wale Fadeyibi', classYear: '\'27', image: '/images/wale.png' },
   { id: '16', name: 'Avery Misner', classYear: '\'27', image: '/images/avery.png' },
   { id: '17', name: 'John Kemp', classYear: '\'27', image: '/images/john-kemp.png' },
   { id: '18', name: 'Brice June', classYear: '\'27', image: '/images/brice.png' },
-  { id: '19', name: 'Matthew Jordan', classYear: '\'27',role: 'Sargeant-at-Arms', image: '/images/matthew-jordan.png' },
-  { id: '20', name: 'Samir Batheja', classYear: '\'27', role: 'Secretary', image: '/images/samir.png' },
-  { id: '21', name: 'Walter Royal', classYear: '\'28', role: 'Rush Chair/Social Chair',image: '/images/walter.png' },
-  { id: '22', name: 'Orion Browne', classYear: '\'28', role: 'Social Chair', image: '/images/orion-browne.png' },
   { id: '23', name: 'Zavier Averra', classYear: '\'27', image: '/images/zavier.png' },
-  { id: '24', name: 'Trent Page', classYear: '\'28',  role: 'Treasurer', image: '/images/trent.png' },
   { id: '25', name: 'Jackson St. Aubyn', classYear: '\'28', image: '/images/jackson.png' },
   { id: '26', name: 'Samuel McGivern', classYear: '\'28', image: '/images/sam-mcgivern.png' },
   { id: '27', name: 'Quinton Lewis', classYear: '\'27', image: '/images/quinton.png' },
